@@ -1,0 +1,12 @@
+class PyCar:
+  def __init__(self, color):
+    self.mileage = 0
+    self.dist_to_maintenance = 10000
+    self.color = color
+
+  def move(self, distance):
+    self.mileage = self.mileage + distance
+    self.dist_to_maintenance = self.dist_to_maintenance - distance
+
+  def paint(self, new_color):
+    self.color = new_color
